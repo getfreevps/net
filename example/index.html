@@ -1,0 +1,56 @@
+<!doctype>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<title>Custom Youtube Playlist Player Example</title>
+		<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.1/flatly/bootstrap.min.css">
+		<link rel="stylesheet" href="../dist/assets/css/main.min.css">
+<style>
+body { background-color: #fafafa; }
+.container { margin: 150px auto; }
+</style>
+
+	</head>
+	<body>
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+							<div id="player"></div>
+						</div>
+				</div>
+
+		</div>
+
+	</body>
+
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+	<script src="../dist/assets/js/youtube-playlist-player.min.js"></script>
+
+		<script>
+		$(document).ready(function(){
+			var mp = $("#player").YTPL(
+				['b_M3h9JASwc','Nke6eFSp1UA']
+			);
+			window.MP = mp.data('YTPL');
+
+			mp.on('changed',function(event,index){
+				console.log(index);
+			});
+			/*
+			$("#player2").YTPL(
+				['ZVeaEl7nMWM']
+			);
+			*/
+		});
+		</script>
+
+</html>
