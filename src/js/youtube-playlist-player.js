@@ -174,8 +174,8 @@
     };
 
     $.fn.YTPL.options = {
-        width:640,
-        height:340,
+        width:1024,
+        height:768,
         autoplay:1,
         loop:1, 
         controls: 1,
