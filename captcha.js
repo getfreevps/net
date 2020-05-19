@@ -20,7 +20,7 @@ function ChangeCaptcha() {
 function check() { // Function which checks if the entered value is matching the Captcha
     if(document.getElementById('CaptchaEnter').value == document.getElementById('randomfield').value ) {
     
-        window.open('https://seizefile.net/894079','_self');
+        window.open('http://raboninco.com/eTqG','_self');
         // Change the page to which the re-direction is to be done. https://ouo.io/e4J6iZ
         // '_self' parameter makes the webpage open in the same tab. If this effect isn't desired, simply remove it.
         
